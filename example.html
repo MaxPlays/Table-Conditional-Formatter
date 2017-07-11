@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>JS Table format example</title>
+		<meta charset="UTF-8">
+	
+		<style type="text/css">
+			*{
+				font-family: sans-serif;
+			}
+			#myTable{
+				border-collapse: collapse;
+				width: 30%;
+			}
+			#myTable td, #myTable th{
+				border: 1px solid black;
+				padding: 5px;
+				text-align: center;
+			}
+			#myTable th{
+				font-weight: bold;
+			}
+			input{
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<h3>Table to format</h3>
+
+		<table id="myTable">
+			
+			<tr> 
+			<th>Key</th>
+			<th>Value</th>
+			</tr>
+
+			<tr>
+			<td>Test</td>
+			<td>1</td>
+			</tr>
+
+			<tr>
+			<td>Test2</td>
+			<td>0</td>
+			</tr>
+
+			<tr>
+			<td>Test3</td>
+			<td>-1</td>
+			</tr>
+
+		</table>
+		<script type="text/javascript" src="table-format.js"></script>
+
+		<input type="button" name="refresh" value="Refresh" onclick="format()">
+
+	</body>
+
+</html>
