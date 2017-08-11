@@ -4,7 +4,7 @@
 	<head>
 		<title>JS Table format example</title>
 		<meta charset="UTF-8">
-	
+
 		<style type="text/css">
 			*{
 				font-family: sans-serif;
@@ -27,12 +27,12 @@
 		</style>
 	</head>
 	<body>
-		
+
 		<h3>Table to format</h3>
 
-		<table id="myTable">
-			
-			<tr> 
+		<table class="format" id="myTable">
+
+			<tr>
 			<th>Key</th>
 			<th>Value</th>
 			</tr>
@@ -52,10 +52,16 @@
 			<td>-1</td>
 			</tr>
 
+			<tr>
+			<td>Test4</td>
+			<td>-5</td>
+			</tr>
+
 		</table>
 		<script type="text/javascript" src="table-format.js"></script>
 
-		<input type="button" name="refresh" value="Refresh" onclick="format()">
+		<input type="button" id="refresh" value="Refresh">
+		<script type="text/javascript" src="button-listener.js" charset="utf-8"></script>
 
 	</body>
 
